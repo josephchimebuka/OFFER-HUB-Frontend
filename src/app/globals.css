@@ -44,6 +44,20 @@
   --gradient-hero: linear-gradient(to right, #002333, #15949C);
 }
 
+/* Shared raised shadow utilities */
+.shadow-raised {
+  box-shadow: var(--shadow-neumorphic-light);
+}
+
+.shadow-raised-hover {
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.shadow-raised-hover:hover {
+  box-shadow: 8px 8px 16px #c6cad3, -8px -8px 16px #ffffff;
+  transform: translateY(-2px);
+}
+
 /* Base styles */
 html {
   scroll-behavior: smooth;
